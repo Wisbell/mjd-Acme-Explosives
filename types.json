@@ -5,6 +5,36 @@
             "category": 0,
             "name": "personal",
             "description": "Fireworks intended for recreational use during holiday celebrations"
+        },
+        {
+            "id": 1,
+            "category": 0,
+            "name": "commerical",
+            "description": "Fireworks intended for commerical use during holiday celebrations"
+        },
+        {
+            "id": 2,
+            "category": 0,
+            "name": "industrial",
+            "description": "Fireworks intended for industirial use during holiday celebrations"
+        },
+        {
+            "id": 3,
+            "category": 1,
+            "name": "personal",
+            "description": "Explosives intended for residential use"
+        },
+        {
+            "id": 4,
+            "category": 1,
+            "name": "commerical",
+            "description": "Explosives intended for commercial use"
+        },
+        {
+            "id": 5,
+            "category": 1,
+            "name": "industirial",
+            "description": "Explosives intended for industirial use"
         }
     ]
 }
