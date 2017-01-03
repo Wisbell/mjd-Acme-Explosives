@@ -10,13 +10,13 @@
             "id": 1,
             "category": 0,
             "name": "commerical",
-            "description": "Fireworks intended for commerical use during holiday celebrations"
+            "description": "Fireworks intended for upcoming professional use during holiday celebrations"
         },
         {
             "id": 2,
             "category": 0,
             "name": "industrial",
-            "description": "Fireworks intended for industirial use during holiday celebrations"
+            "description": "Fireworks intended for professional use during holiday celebrations"
         },
         {
             "id": 3,

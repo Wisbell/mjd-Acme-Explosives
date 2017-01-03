@@ -6,118 +6,103 @@
             "name": "Fairy Sparklers",
             "description": "Multi-colored sparklers that are safe for any age."
         },
-        "Bumble_bee": {
+        "bumble_bee": {
             "id": 1,
             "type": 0,
             "name": "Fairy Sparklers",
             "description": "Multi-colored sparklers that are safe for any age."
         },
-        "fairy_addmorestuff": {
+        "moving_mini_tank": {
             "id": 2,
             "type": 0,
             "name": "Fairy Sparklers",
             "description": "Multi-colored sparklers that are safe for any age."
-        }
-    },
-
-    {
-        "fairy_sparklers": {
+        },
+        "mega_sparklers": {
             "id": 3,
             "type": 1,
             "name": "Fairy Sparklers",
             "description": "Multi-colored sparklers that are safe for any age."
         },
-        "fairy_sklers": {
+        "mega_bumble_bees": {
             "id": 4,
             "type": 1,
             "name": "Fairy Sparklers",
             "description": "Multi-colored sparklers that are safe for any age."
         },
-        "faiklers": {
+        "moving_lifelike_tank": {
             "id": 5,
             "type": 1,
             "name": "Fairy Sparklers",
             "description": "Multi-colored sparklers that are safe for any age."
-        }
-    },
-
-    {
-        "fairy_sparklers": {
+        },
+        "super_saiyan_sparklers": {
             "id": 6,
             "type": 2,
             "name": "Fairy Sparklers",
             "description": "Multi-colored sparklers that are safe for any age."
         },
-        "fadddlers": {
+        "moving_monster_tank": {
             "id": 7,
             "type": 2,
             "name": "Fairy Sparklers",
             "description": "Multi-colored sparklers that are safe for any age."
         },
-        "faiaaaers": {
+        "real_stinging_bumbles": {
             "id": 8,
             "type": 2,
             "name": "Fairy Sparklers",
             "description": "Multi-colored sparklers that are safe for any age."
-        }
-    },
-
-    {
-        "fairy_sparklers": {
+        },
+        "gopher_sticks": {
             "id": 9,
             "type": 3,
             "name": "Fairy Sparklers",
             "description": "Multi-colored sparklers that are safe for any age."
         },
-        "faidddddparklers": {
+        "alligator_destroyers": {
             "id": 10,
             "type": 3,
             "name": "Fairy Sparklers",
             "description": "Multi-colored sparklers that are safe for any age."
         },
-        "faireeeelers": {
+        "residential_hole_diggers": {
             "id": 11,
             "type": 3,
             "name": "Fairy Sparklers",
             "description": "Multi-colored sparklers that are safe for any age."
-        }
-    },
-
-    {
-        "fassssklers": {
+        },
+        "golf_gopher_sticks": {
             "id": 12,
             "type": 4,
             "name": "Fairy Sparklers",
             "description": "Multi-colored sparklers that are safe for any age."
         },
-        "fairy_sparklers": {
+        "mega_alligator_destroyers": {
             "id": 13,
             "type": 4,
             "name": "Fairy Sparklers",
             "description": "Multi-colored sparklers that are safe for any age."
         },
-        "fooooparklers": {
+        "miner_hole_diggers": {
             "id": 14,
             "type": 4,
             "name": "Fairy Sparklers",
             "description": "Multi-colored sparklers that are safe for any age."
-        }
-    },
-
-    {
-        "fairy_sparklers": {
+        },
+        "h-bomb": {
             "id": 15,
             "type": 5,
             "name": "Fairy Sparklers",
             "description": "Multi-colored sparklers that are safe for any age."
         },
-        "falllllparklers": {
+        "volcano_maker": {
             "id": 16,
             "type": 5,
             "name": "Fairy Sparklers",
             "description": "Multi-colored sparklers that are safe for any age."
         },
-        "fapppprklers": {
+        "world_destroyer": {
             "id": 17,
             "type": 5,
             "name": "Fairy Sparklers",
