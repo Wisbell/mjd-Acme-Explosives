@@ -69,14 +69,16 @@ var productsPromise = new Promise(function(resolve, reject){
 
 function consoleLogJSON () {
     console.log("Ready to load into DOM - Call the function you need to load")
-    console.log(categories)
-    console.log(types)
-    console.log(products)
+    // console.log(categories)
+    // console.log(types)
+    // console.log(products)
 }
 
 
 function clearAddCategoryDiv () {
     console.log("clearAddCategoryDiv function called")
+
+    $(".addCategory").empty()
 }
 
 function addFireworksCategoryToDOM () {
@@ -85,42 +87,21 @@ function addFireworksCategoryToDOM () {
     clearAddCategoryDiv()
 
     // Add Category Name
-    $(".addCategory").append(`<div class="row categoryName">
-                                <div class="col-md-12">${categories[0].name}</div>
+    $(".addCategory").append(`<div class="row fireworksRow">
+                                <div class="col-md-12"><h1>${categories[0].name}</h1></div>
                               </div>`)
 
-    // Add Types/Products
-    for (var i = 0; i < types.length; i++) {
+    // Add Products
 
-        //var currentType = types[i].category
+    for (var key in products) {
 
-        if (types[i].category != categories[0].id) {
-            break;
+        if(products[key].type <= 2){
+            $(".fireworksRow").append(`<div class="product fireworkProduct col-md-4">
+                                            <p>${products[key].name}</p>
+                                            <p>Type</p>
+                                            <p>Category</p>
+                                        </div>`)
         }
-
-        // Add current Type Name
-        $(".addCategory").append(`<div class="row typeName">
-                                    <div class="col-md-12">${types[i].name}</div>
-                                </div>`)
-
-        // Add Products of current type
-
-        for (var key in products) {
-            console.log("key", key)
-            console.log("object of current key", products[key])
-            console.log("current product type number", products[key].type)
-            console.log("current type id", types[i].id)
-
-            if (products[key].type != types[i].id) {
-                console.log("break")
-                break;
-            }
-
-            $(".addCategory").append(`<div class="row productName">
-                                        <div class="col-md-4">${key.name}</div>
-                                    </div>`)
-        }
-
     }
 }
 
@@ -128,6 +109,24 @@ function addExplosivesCategoryToDOM () {
     console.log("addExplosivesCategoryToDOM function called")
 
     clearAddCategoryDiv()
+
+    // Add Category Name
+    $(".addCategory").append(`<div class="row explosivesRow">
+                                <div class="col-md-12"><h1>${categories[1].name}</h1></div>
+                              </div>`)
+
+    // Add Products
+
+    for (var key in products) {
+
+        if(products[key].type >= 3){
+            $(".explosivesRow").append(`<div class="product explosivesProduct col-md-4">
+                                            <p>${products[key].name}</p>
+                                            <p>Type</p>
+                                            <p>Category</p>
+                                        </div>`)
+        }
+    }
 }
 
 
