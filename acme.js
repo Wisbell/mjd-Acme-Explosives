@@ -81,6 +81,25 @@ function clearAddCategoryDiv () {
     $(".addCategory").empty()
 }
 
+function getTypeName(currentProductTypeNumber) {
+    switch(currentProductTypeNumber) {
+        case 0:
+            return types[0].name;
+        case 1:
+            return types[1].name;
+        case 2:
+            return types[2].name;
+        case 3:
+            return types[3].name;
+        case 4:
+            return types[4].name;
+        case 5:
+            return types[5].name;
+        default:
+            console.log("I think there is an error with the type number")
+    }
+}
+
 function addFireworksCategoryToDOM () {
     console.log("addFireworksCategoryToDOM function called")
 
@@ -88,7 +107,7 @@ function addFireworksCategoryToDOM () {
 
     // Add Category Name
     $(".addCategory").append(`<div class="row fireworksRow">
-                                <div class="col-md-12"><h1>${categories[0].name}</h1></div>
+                                <div class="col-md-12"><h1 class="fireworksHeader">${categories[0].name}</h1></div>
                               </div>`)
 
     // Add Products
@@ -96,10 +115,12 @@ function addFireworksCategoryToDOM () {
     for (var key in products) {
 
         if(products[key].type <= 2){
-            $(".fireworksRow").append(`<div class="product fireworkProduct col-md-4">
-                                            <p>${products[key].name}</p>
-                                            <p>Type</p>
-                                            <p>Category</p>
+            var currentTypeName = getTypeName(products[key].type)
+
+            $(".fireworksRow").append(`<div class="product fireworkProduct col-md-3">
+                                            <p>Product Name: ${products[key].name}</p>
+                                            <p>Type: ${currentTypeName}</p>
+                                            <p>Category: ${categories[0].name}</p>
                                         </div>`)
         }
     }
@@ -112,18 +133,20 @@ function addExplosivesCategoryToDOM () {
 
     // Add Category Name
     $(".addCategory").append(`<div class="row explosivesRow">
-                                <div class="col-md-12"><h1>${categories[1].name}</h1></div>
+                                <div class="col-md-12"><h1 class="explosivesHeader">${categories[1].name}</h1></div>
                               </div>`)
 
     // Add Products
 
     for (var key in products) {
 
+        var currentTypeName = getTypeName(products[key].type)
+
         if(products[key].type >= 3){
-            $(".explosivesRow").append(`<div class="product explosivesProduct col-md-4">
-                                            <p>${products[key].name}</p>
-                                            <p>Type</p>
-                                            <p>Category</p>
+            $(".explosivesRow").append(`<div class="product explosivesProduct col-md-3">
+                                            <p>Product Name: ${products[key].name}</p>
+                                            <p>Type: ${currentTypeName}</p>
+                                            <p>Category: ${categories[1].name}</p>
                                         </div>`)
         }
     }
